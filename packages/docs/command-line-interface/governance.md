@@ -147,7 +147,13 @@ OPTIONS
 
   --from=0xc1912fEE45d61C87Cc5EA59DaE31190FFFFf232d  (required) Proposer's address
 
-  --jsonTransactions=jsonTransactions                (required) Path to json transactions
+  --interactive                                      Form proposal using an interactive prompt for Celo registry
+                                                     contracts and functions
+
+  --jsonTransactions=jsonTransactions                Path to json transactions
+
+  --number=number                                    [default: 1] Number of transactions to prompt for in interactive
+                                                     mode
 
 EXAMPLE
   propose --jsonTransactions ./transactions.json --deposit 10000 --from 0x5409ed021d9299bf6814279a6a1411a7e866a631

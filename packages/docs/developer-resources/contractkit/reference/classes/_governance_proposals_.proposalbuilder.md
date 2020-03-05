@@ -17,6 +17,7 @@
 * [addTx](_governance_proposals_.proposalbuilder.md#addtx)
 * [addWeb3Tx](_governance_proposals_.proposalbuilder.md#addweb3tx)
 * [build](_governance_proposals_.proposalbuilder.md#build)
+* [fromJsonTx](_governance_proposals_.proposalbuilder.md#fromjsontx)
 * [fromWeb3tx](_governance_proposals_.proposalbuilder.md#fromweb3tx)
 
 ## Constructors
@@ -25,7 +26,7 @@
 
 \+ **new ProposalBuilder**(`kit`: [ContractKit](_kit_.contractkit.md), `builders`: Array‹function›): *[ProposalBuilder](_governance_proposals_.proposalbuilder.md)*
 
-*Defined in [contractkit/src/governance/proposals.ts:51](https://github.com/celo-org/celo-monorepo/blob/master/packages/contractkit/src/governance/proposals.ts#L51)*
+*Defined in [contractkit/src/governance/proposals.ts:53](https://github.com/celo-org/celo-monorepo/blob/master/packages/contractkit/src/governance/proposals.ts#L53)*
 
 **Parameters:**
 
@@ -42,7 +43,7 @@ Name | Type | Default |
 
 ▸ **addJsonTx**(`tx`: [ProposalTransactionJSON](../interfaces/_governance_proposals_.proposaltransactionjson.md)): *number*
 
-*Defined in [contractkit/src/governance/proposals.ts:85](https://github.com/celo-org/celo-monorepo/blob/master/packages/contractkit/src/governance/proposals.ts#L85)*
+*Defined in [contractkit/src/governance/proposals.ts:102](https://github.com/celo-org/celo-monorepo/blob/master/packages/contractkit/src/governance/proposals.ts#L102)*
 
 **Parameters:**
 
@@ -58,7 +59,7 @@ ___
 
 ▸ **addProxyRepointingTx**(`proxyAddress`: string, `newImplementationAddress`: string): *void*
 
-*Defined in [contractkit/src/governance/proposals.ts:65](https://github.com/celo-org/celo-monorepo/blob/master/packages/contractkit/src/governance/proposals.ts#L65)*
+*Defined in [contractkit/src/governance/proposals.ts:67](https://github.com/celo-org/celo-monorepo/blob/master/packages/contractkit/src/governance/proposals.ts#L67)*
 
 **Parameters:**
 
@@ -75,7 +76,7 @@ ___
 
 ▸ **addTx**(`tx`: [CeloTransactionObject](_wrappers_basewrapper_.celotransactionobject.md)‹any›, `params`: Partial‹ProposalTxParams›): *void*
 
-*Defined in [contractkit/src/governance/proposals.ts:75](https://github.com/celo-org/celo-monorepo/blob/master/packages/contractkit/src/governance/proposals.ts#L75)*
+*Defined in [contractkit/src/governance/proposals.ts:77](https://github.com/celo-org/celo-monorepo/blob/master/packages/contractkit/src/governance/proposals.ts#L77)*
 
 **Parameters:**
 
@@ -92,7 +93,7 @@ ___
 
 ▸ **addWeb3Tx**(`tx`: TransactionObject‹any›, `params`: ProposalTxParams): *number*
 
-*Defined in [contractkit/src/governance/proposals.ts:72](https://github.com/celo-org/celo-monorepo/blob/master/packages/contractkit/src/governance/proposals.ts#L72)*
+*Defined in [contractkit/src/governance/proposals.ts:74](https://github.com/celo-org/celo-monorepo/blob/master/packages/contractkit/src/governance/proposals.ts#L74)*
 
 **Parameters:**
 
@@ -109,9 +110,25 @@ ___
 
 ▸ **build**(): *Promise‹object[]›*
 
-*Defined in [contractkit/src/governance/proposals.ts:57](https://github.com/celo-org/celo-monorepo/blob/master/packages/contractkit/src/governance/proposals.ts#L57)*
+*Defined in [contractkit/src/governance/proposals.ts:59](https://github.com/celo-org/celo-monorepo/blob/master/packages/contractkit/src/governance/proposals.ts#L59)*
 
 **Returns:** *Promise‹object[]›*
+
+___
+
+###  fromJsonTx
+
+▸ **fromJsonTx**(`tx`: [ProposalTransactionJSON](../interfaces/_governance_proposals_.proposaltransactionjson.md)): *Promise‹object›*
+
+*Defined in [contractkit/src/governance/proposals.ts:87](https://github.com/celo-org/celo-monorepo/blob/master/packages/contractkit/src/governance/proposals.ts#L87)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`tx` | [ProposalTransactionJSON](../interfaces/_governance_proposals_.proposaltransactionjson.md) |
+
+**Returns:** *Promise‹object›*
 
 ___
 
@@ -119,7 +136,7 @@ ___
 
 ▸ **fromWeb3tx**(`tx`: TransactionObject‹any›, `params`: ProposalTxParams): *[ProposalTransaction](../modules/_wrappers_governance_.md#proposaltransaction)*
 
-*Defined in [contractkit/src/governance/proposals.ts:59](https://github.com/celo-org/celo-monorepo/blob/master/packages/contractkit/src/governance/proposals.ts#L59)*
+*Defined in [contractkit/src/governance/proposals.ts:61](https://github.com/celo-org/celo-monorepo/blob/master/packages/contractkit/src/governance/proposals.ts#L61)*
 
 **Parameters:**
 
